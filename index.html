@@ -35,11 +35,6 @@
             gesture-detector
         >
             <a-assets>
-                <label>
-                    <span>Camera</span>
-                    <select name="input-stream_constraints" id="deviceSelection">
-                    </select>
-                </label>
                 <video
                     id="vid"
                     src="assets/asset.mp4"
@@ -79,6 +74,11 @@
             </a-marker>
 
             <a-entity camera></a-entity>
+            <label>
+                    <span>Camera</span>
+                    <select name="input-stream_constraints" id="deviceSelection">
+                    </select>
+                </label>
         </a-scene>
     </body>
 </html>
