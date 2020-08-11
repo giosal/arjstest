@@ -8,8 +8,9 @@
 
 'use strict';
 
-const videoElement = document.querySelector('video');
+const videoElement = document.querySelector('#vid');
 const videoSelect = document.querySelector('select#cameraSelect');
+console.log(videoElement);
 console.log(videoSelect);
 const selectors = [videoSelect];
 
