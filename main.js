@@ -10,6 +10,7 @@
 
 const videoElement = document.querySelector('video');
 const videoSelect = document.querySelector('select#cameraSelect');
+console.log(videoSelect);
 const selectors = [videoSelect];
 
 function gotDevices(deviceInfos) {
