@@ -6,10 +6,10 @@
     </head>
     <style>
   .arjs-loader {
-    height: 90%;
+    height: 95%;
     width: 100%;
     position: absolute;
-    top: 10%;
+    top: 5%;
     left: 0;
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 9999;
@@ -26,6 +26,10 @@
 </style>
 <body style="margin : 0px; overflow: hidden;">
   <!-- minimal loader shown until image descriptors are loaded -->
+    <div class="menu">
+        <label>Camera</label>
+        <select id="cameraSelect"></select>
+    </div>
   <div class="arjs-loader">
     <div>Loading, please wait...</div>
   </div>
