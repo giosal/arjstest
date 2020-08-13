@@ -8,8 +8,8 @@
 
 'use strict';
 
-const videoElement = document.getElementbyId('#vid');
-const videoSelect = document.getElementbyId('#cameraSelect');
+const videoElement = document.getElementById('#vid');
+const videoSelect = document.getElementById('#cameraSelect');
 console.log(videoElement);
 console.log(videoSelect);
 const selectors = [videoSelect];
