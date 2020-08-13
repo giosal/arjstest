@@ -41,7 +41,8 @@
     embedded
     arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
   >
-      <!--video
+      <a-assets>
+      <video
                     id="vid"
                     src="assets/asset.mp4"
                     preload="auto"
@@ -52,16 +53,10 @@
                     autoplay
                     muted
                     playsinline
-                ></video-->
+                ></video>
+          </a-assets>
     <!-- we use cors proxy to avoid cross-origin problems -->
-      <!--a-video
-                    src="#vid"
-                    scale="1 1 1"
-                    position="0 0.1 0"
-                    rotation="-90 0 0"
-                    class="clickable"
-                    gesture-handler
-                ></a-video-->
+      
     <a-nft
       type="nft"
       url="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/trex-image/trex"
@@ -70,12 +65,20 @@
       smoothTolerance=".01"
       smoothThreshold="5"
     >
-      <a-entity
+        <a-video
+                    src="#vid"
+                    scale="1 1 1"
+                    position="0 0.1 0"
+                    rotation="-90 0 0"
+                    class="clickable"
+                    gesture-handler
+                ></a-video>
+      <!--a-entity
         gltf-model="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf"
         scale="5 5 5"
         position="50 150 0"
       >
-      </a-entity>
+      </a-entity-->
     </a-nft>
     <a-entity camera></a-entity>
   </a-scene>
