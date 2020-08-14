@@ -35,7 +35,7 @@
 navigator.mediaDevices.enumerateDevices()
   .then(function(devices) {
     devices.forEach(function(device) {
-        document.getElementById("#cameraSelect").options.add(device.deviceId);
+        //document.querySelector("#cameraSelect").options.add(device.deviceId);
       console.log(device.kind + ": " + device.label +
         " id = " + device.deviceId);
     });
