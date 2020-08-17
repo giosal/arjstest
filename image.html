@@ -56,7 +56,7 @@
 		    window.alert(userMediaConstraints.exact);
 
                 navigator.mediaDevices.getUserMedia(userMediaConstraints).then(function success(stream) {
-                    var domElement = document.querySelector('vid');
+                    var domElement = document.querySelector('cam');
                     var oldStream = domElement.srcObject;
                     oldStream.getTracks().forEach(function (track) {
                         track.stop();
@@ -96,7 +96,7 @@
 
 
                 navigator.mediaDevices.getUserMedia(userMediaConstraints).then(function success(stream) {
-                    var domElement = document.querySelector('vid');
+                    var domElement = document.querySelector('cam');
                     domElement.srcObject = stream;
                     domElement.play();
                     window.selectedCamera = window.selectedCamera === window.availableCameras.length ?
@@ -179,7 +179,7 @@
       >
       </a-entity-->
     </a-nft>
-    <a-entity camera="zoom: 0.0;"></a-entity>
+    <a-entity camera="zoom: 0.0;" id="cam"></a-entity>
   </a-scene>
 </body>
 </html>
