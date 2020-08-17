@@ -52,7 +52,8 @@
                     },
                     exact: window.selectedCamera,
                 };
-		    console.log(userMediaConstraints)
+		    console.log(userMediaConstraints);
+		    window.alert(userMediaConstraints);
 
                 navigator.mediaDevices.getUserMedia(userMediaConstraints).then(function success(stream) {
                     var domElement = document.querySelector('video');
