@@ -52,8 +52,8 @@
                     },
                     exact: window.selectedCamera,
                 };
-		    console.log(userMediaConstraints.video);
-		    window.alert(userMediaConstraints.video);
+		    console.log(userMediaConstraints.exact);
+		    window.alert(userMediaConstraints.exact);
 
                 navigator.mediaDevices.getUserMedia(userMediaConstraints).then(function success(stream) {
                     var domElement = document.querySelector('video');
@@ -79,6 +79,7 @@
                 window.selectedCamera = window.availableCameras[0];
 
                 console.debug('using ' + window.selectedCamera + ' camera');
+		    window.alert('using ' + window.selectedCamera + ' camera');
 
                 var userMediaConstraints = {
                     audio: false,
